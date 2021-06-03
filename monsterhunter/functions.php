@@ -10,7 +10,7 @@ function monhun_themes() {
       //Slick
       wp_enqueue_style( 'slick-css',  get_stylesheet_directory_uri() . '/inc/slick/slick.css', array());
       wp_enqueue_style( 'slick-theme-css',  get_stylesheet_directory_uri() . '/inc/slick/slick-theme.css' );
-      wp_enqueue_script( 'slick-js',  get_stylesheet_directory_uri() . '/inc/slick/slick.js', array( 'jquery' ), '1.8.4', TRUE );
+     wp_enqueue_script( 'slick-js',  get_stylesheet_directory_uri() . '/inc/slick/slick.js', array( 'jquery' ), '1.8.4', TRUE );
       wp_enqueue_script( 'slick-init',   get_stylesheet_directory_uri() . '/inc/slick/slick-init.js', array( 'slick-js' ), '1.0.0',  TRUE );
   
   
