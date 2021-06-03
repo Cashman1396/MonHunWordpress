@@ -38,6 +38,7 @@ a, a:hover, button, button:hover {
 
 .cta-text {
     text-align: center;
+    padding-top: 20px;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -46,7 +47,15 @@ a, a:hover, button, button:hover {
 .slider-area {
     height: 250px;
     max-width:100%;
+    background-image: linear-gradient(to right, #F74808, #A02C01, #5A1901);
 
+}
+
+.slider-text {
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
