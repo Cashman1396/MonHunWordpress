@@ -25,6 +25,10 @@
 
 
 <div class="slider-area">
+<div class="slider-text">
+<h2>Which Monster will you battle against</h2>
+
+</div>
 
 
 </div>
