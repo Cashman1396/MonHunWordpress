@@ -4,6 +4,7 @@
  ?>
 
  <div class="hero">
+
     
 </div>
 
@@ -25,11 +26,17 @@
 
 
 <div class="slider-area">
+
 <div class="slider-text">
 <h2>Which Monster will you battle against</h2>
-
 </div>
 
+<div class="your-class">
+  <div>your content</div>
+  <div>your content</div>
+  <div>your content</div>
+  <div>your content</div>
+</div>
 
 </div>
 
