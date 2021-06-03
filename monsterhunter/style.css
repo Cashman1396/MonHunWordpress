@@ -1,0 +1,80 @@
+/*
+Theme Name: Monster Hunter
+
+*/
+
+a, a:hover, button, button:hover {
+    transition: all 0.2s;
+  }
+
+  a:hover {
+    color: yellow;
+}
+
+.top-div {
+    height: 50px;
+    max-width:100%;
+    background-color:#6F0101;
+
+}
+
+.home-text {
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Hero CSS */
+
+
+
+/* CTA */
+.cta-null {
+    height: 250px;
+    max-width:100%;
+    background-image: linear-gradient(to right,#FF3B00, #261907, #A56A12);
+
+}
+
+.cta-text {
+    text-align: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Slider Area */
+.slider-area {
+    height: 250px;
+    max-width:100%;
+
+}
+
+
+
+/* footer css */
+.footer-bar {
+    height: -50px;
+    max-width:100%;
+    background-image: linear-gradient(to right,#D30303, #BF2222, #A21F1F, #6E1919, #520C0C, #6A0202);
+}
+
+.footer-text {
+    color: white; 
+    text-align: center;
+}
+
+ .footer-shadow {
+    position:relative;
+    height: 820px;
+    max-width: 100%;
+    background-color: rgba(255, 8, 8, 0.171);
+    z-index: 2;
+}
+
+.footer-image {
+
+    max-height: 100%;
+    position: absolute;
+    background-size: auto;
+    z-index: 1;
+}

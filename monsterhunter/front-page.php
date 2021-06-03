@@ -1,0 +1,47 @@
+<?php 
+ get_header()
+
+ ?>
+
+ <div class="hero">
+    
+</div>
+
+
+
+</div>
+
+
+
+<div class="cta-null">
+<div class="cta-text">
+    <h2>Lorem ipsum dolor</h2>
+    <h3>Lorem ipsum dolor sit amet, consectetur</h3>
+
+</div>
+</div>
+
+
+
+
+<div class="slider-area">
+
+
+</div>
+
+
+<div class="faq">
+
+</div>
+
+
+
+
+
+
+
+
+<?php 
+
+get_footer() 
+?>
