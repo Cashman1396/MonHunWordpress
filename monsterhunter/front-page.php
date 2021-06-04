@@ -3,7 +3,32 @@
 
  ?>
 
- <div class="hero">
+ <div id="hero">
+
+<div class="hero-text">
+ <h2><?php the_field('hero_headline'); ?></h2>
+</div>
+
+ <?php
+
+ $hero = get_field('hero_image');
+
+ if ( $hero ): ?>
+
+<style type="text/css">
+		hero {
+			background-image: url(<?php echo $hero['wp-content/uploads/2021/06/Crimson-Glow-Valstrax-Hir-Res.png']; ?>);
+		}
+	</style>
+
+<?php endif; ?>
+
+
+
+
+
+
+
 
     
 </div>
@@ -23,7 +48,12 @@
 </div>
 
 
+<?php 
 
+$images = get_field('image_gallery');
+
+
+?>
 
 <div class="slider-area">
 
@@ -35,12 +65,17 @@
         <div>First </div>
         <div>Second </div>
         <div>It works!</div>
+        <div>WOW!</div>
     </div>
 
 </div>
 
 
-<div class="faq">
+<div class="faq-area">
+<div class="faq-text">
+    <h1>FAQ</h1>
+
+</div>
 
 </div>
 
