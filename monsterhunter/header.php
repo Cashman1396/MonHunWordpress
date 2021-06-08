@@ -13,6 +13,10 @@
 <div class="top-div">
 <div class="home-text"> 
     <a href="/">Home</a>
+
+    <button type="button" class="btn btn-primary">Tweet</button>
+
+    <button type="button" class="btn btn-danger">Play Now</button>
 </div>
 
 </div>

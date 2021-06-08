@@ -68,16 +68,41 @@ a, a:hover, button, button:hover {
 /* FAQ AREA */
 
 .faq-area {
-    height: 250px;
+    height: 725px;
     max-width:100%;
-    background-image: linear-gradient(to right,);
+    background-image: linear-gradient(to right, #000000, #252525);
 }
 
 .faq-text {
     text-align: center;
-    padding-top: 40px;
+    padding-top: 15px;
+    color:white
 }
 
+.hashtag {
+    margin: 0px;
+}
+
+#headerOne {
+    color: white;
+}
+
+.accordion-button {
+    color: white;
+}
+
+.accordion-item {
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+#headingOne {
+    border-style: solid;
+}
+
+button:hover {
+    color: gold;
+}
 
 /* footer css */
 .footer-bar {
@@ -106,3 +131,5 @@ a, a:hover, button, button:hover {
     background-size: auto;
     z-index: 1;
 }
+
+
