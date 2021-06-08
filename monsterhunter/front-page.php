@@ -15,11 +15,11 @@
 
  if ( $hero ): ?>
 
-<style type="text/css">
-		hero {
-			background-image: url(<?php echo $hero['wp-content/uploads/2021/06/Crimson-Glow-Valstrax-Hir-Res.png']; ?>);
+<style>
+		#hero {
+			background-image: url(<?php echo $hero; ?>);
 		}
-	</style>
+</style>
 
 <?php endif; ?>
 
@@ -70,7 +70,7 @@ if( $images ):
 
   <div class="responsive">
     <?php foreach($images as $image_ID): ?>
-      <div>
+      <div class="image-slide">
         <?= wp_get_attachment_image($image_ID, "thumbnail") ?>
       </div>
       <?php endforeach; ?>
@@ -86,82 +86,34 @@ if( $images ):
 
 <div class="faq-area">
 
-
+<?php if( have_rows('faq-repeater') ): 
+  $faq_count = 0; ?>
+  
 <div class="faq-text">
     <h1>FAQ</h1>
 
 
+
 <div class="accordion" id="accordionExample">
+<?php while( have_rows('faq-repeater') ): the_row(); 
+ $faq_count++;
+        $question = get_sub_field('question');
+        $answer = get_sub_field('answer');
+        ?>
   <div class="accordion-item">
-    <h2 class="accordion-header" id="headingOne">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        QUESTION: WHAT IS GOING ON
+    <h2 class="accordion-header" id="heading<?php echo $faq_count ?>">
+      <button class="accordion-button <?php if ($faq_count!=1) { echo'collapsed'; } ?>" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<?php echo $faq_count ?>" aria-expanded="<?php if ($faq_count==1) {echo 'true';} else {echo 'false';} ?>" aria-controls="collapse<?php echo $faq_count ?>">
+        QUESTION: <?php echo $question ?>
       </button>
     </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+    <div id="collapse<?php echo $faq_count ?>" class="accordion-collapse collapse <?php if ($faq_count==1) { echo 'show'; } ?>" aria-labelledby="heading<?php echo $faq_count ?>" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-        ANSWER: Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
+        ANSWER: <?php echo $answer ?>
       </div>
     </div>
   </div>
 
-
-
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingTwo">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        Accordion Item #2
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
-    </div>
-  </div>
-
-
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingThree">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        Accordion Item #3
-      </button>
-    </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="accordion-item">
-    <h2 class="accordion-header" id="headingFour">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-        Accordion Item #4
-      </button>
-    </h2>
-    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
-    </div>
-  </div>
-
-
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingFive">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-        Accordion Item #5
-      </button>
-    </h2>
-    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
-    </div>
-  </div>
+  <?php endwhile ?>
 
 <div class="hashtag">
   <h2>#WORLDTORISE</h2>
@@ -170,6 +122,7 @@ if( $images ):
 
 
 </div>
+<?php endif ?>
 
 
 

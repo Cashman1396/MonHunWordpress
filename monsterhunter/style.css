@@ -3,6 +3,11 @@ Theme Name: Monster Hunter
 
 */
 
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
 a, a:hover, button, button:hover {
     transition: all 0.2s;
   }
@@ -26,8 +31,29 @@ a, a:hover, button, button:hover {
 
 /* Hero CSS */
 
+#hero {
+    max-width: 100%;
+    padding: 300px 0 20px;
+    background-position:  center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
 .hero-text {
+
     text-align: center;
+    color: black;
+    background-color: white;
+    padding: 15px 15px;
+    max-width: 50%;
+    margin: 0 auto;
+    border-style: solid;
+    border-color: red;
+    border-radius: 10px;
+    filter:drop-shadow(drop-shadow(0px 3px 6px darkred)); 
+
+
 }
 
 
@@ -49,7 +75,7 @@ a, a:hover, button, button:hover {
 /* Slider Area */
 .slider-area {
     height: 350px;
-    max-width:100%;
+    max-width: 100%;
     background-image: linear-gradient(to right, #F74808, #A02C01, #5A1901);
 
 }
@@ -67,10 +93,23 @@ a, a:hover, button, button:hover {
 
 }
 
-.responsive {
-    margin: 50px;
+.responsive  {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    
 
 }
+
+.image-slide img {
+    border-color: white;
+    border-style: solid;
+    filter:drop-shadow(0px 3px 6px rgba(0,0,0,.16)) 
+
+}
+
+
+
 
 /* FAQ AREA */
 
@@ -124,19 +163,36 @@ button:hover {
 }
 
  .footer-shadow {
-    position:relative;
-    height: 820px;
+    
+    height: 100vh;
     max-width: 100%;
-    background-color: rgba(255, 8, 8, 0.171);
-    z-index: 2;
+    background: url(/wp-content/uploads/2021/06/Valstrax_HighRes3-1-e1622748877998.png),rgba(255, 8, 8, 0.527) ; 
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+  
 }
 
+.overlay {
+    
+    height: 100vh;
+    max-width: 100%;
+    background: rgba(255, 8, 8, 0.178);
+    z-index: 2;
+    margin-top: -50%;
+}
+
+/* 
 .footer-image {
 
     max-height: 100%;
+    max-width: 100vw;
     position: absolute;
     background-size: auto;
+    
     z-index: 1;
 }
+
+*/
 
 
