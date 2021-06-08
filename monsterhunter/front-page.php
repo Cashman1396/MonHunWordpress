@@ -68,7 +68,7 @@ if( $images ):
         <div>WOW!</div>
     </div>
 
-    <div class="responsive">
+  <div class="responsive">
     <?php foreach($images as $image_ID): ?>
       <div>
         <?= wp_get_attachment_image($image_ID, "thumbnail") ?>

@@ -48,7 +48,7 @@ a, a:hover, button, button:hover {
 
 /* Slider Area */
 .slider-area {
-    height: 300px;
+    height: 350px;
     max-width:100%;
     background-image: linear-gradient(to right, #F74808, #A02C01, #5A1901);
 
@@ -68,7 +68,7 @@ a, a:hover, button, button:hover {
 }
 
 .responsive {
-    margin: 30px;
+    margin: 50px;
 
 }
 
