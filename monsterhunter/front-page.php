@@ -52,8 +52,7 @@
 <?php 
 
 $images = get_field('image_gallery');
-
-
+if( $images ):
 ?>
 
 <div class="slider-area">
@@ -68,6 +67,19 @@ $images = get_field('image_gallery');
         <div>It works!</div>
         <div>WOW!</div>
     </div>
+
+    <div class="responsive">
+    <?php foreach($images as $image_ID): ?>
+      <div>
+        <?= wp_get_attachment_image($image_ID, "thumbnail") ?>
+      </div>
+      <?php endforeach; ?>
+    </div>
+  <?php endif; ?>
+
+    
+
+
 
 </div>
 

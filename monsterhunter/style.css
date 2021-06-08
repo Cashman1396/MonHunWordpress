@@ -48,7 +48,7 @@ a, a:hover, button, button:hover {
 
 /* Slider Area */
 .slider-area {
-    height: 250px;
+    height: 300px;
     max-width:100%;
     background-image: linear-gradient(to right, #F74808, #A02C01, #5A1901);
 
@@ -63,6 +63,13 @@ a, a:hover, button, button:hover {
 
 .your-class {
     text-align: center;
+
+
+}
+
+.responsive {
+    margin: 30px;
+
 }
 
 /* FAQ AREA */
