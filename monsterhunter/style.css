@@ -72,6 +72,27 @@ a, a:hover, button, button:hover {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.facebook {
+    background: #3B5998;
+    border-radius: 10px;
+    
+  
+}
+
+.play-now {
+    background: #3B5998;
+    border-radius: 10px;
+
+}
+
+svg {
+    height: 40px;
+    width: 30px;
+    border-radius: 10px;
+
+    
+}
+
 /* Slider Area */
 .slider-area {
     height: 350px;
