@@ -72,6 +72,10 @@ a, a:hover, button, button:hover {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.twitter {
+    border-radius: 10px;
+}
+
 .facebook {
     background: #3B5998;
     border-radius: 10px;
@@ -80,8 +84,9 @@ a, a:hover, button, button:hover {
 }
 
 .play-now {
-    background: #3B5998;
+    background: rgb(248, 73, 53);
     border-radius: 10px;
+    padding-right: 70px;
 
 }
 
@@ -200,7 +205,7 @@ button:hover {
     max-width: 100%;
     background: rgba(255, 8, 8, 0.178);
     z-index: 2;
-    margin-top: -47%;
+    margin-top: -46.1%;
 }
 
 /* 
