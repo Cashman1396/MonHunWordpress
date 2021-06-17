@@ -3,6 +3,12 @@ Theme Name: Monster Hunter
 
 */
 
+.home {
+    border-radius: 10px;
+    padding: 14px;
+
+}
+
 body {
     width: 100vw;
     overflow-x: hidden;
@@ -87,7 +93,7 @@ a, a:hover, button, button:hover {
     background: rgb(248, 73, 53);
     border-radius: 10px;
     padding-right: 70px;
-
+    position: relative;
 }
 
 svg {
