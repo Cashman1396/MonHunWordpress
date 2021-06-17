@@ -3,6 +3,12 @@ Theme Name: Monster Hunter
 
 */
 
+a {
+    color: white;
+}
+
+
+
 .home {
     border-radius: 10px;
     padding: 14px;
@@ -66,7 +72,7 @@ a, a:hover, button, button:hover {
 
 /* CTA */
 .cta-null {
-    height: 250px;
+    height: 275px;
     max-width:100%;
     background-image: linear-gradient(to right,#FF3B00, #261907, #A56A12);
 
@@ -76,24 +82,33 @@ a, a:hover, button, button:hover {
     text-align: center;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
 }
 
-.twitter {
+.cta-button {
+    padding-top: 40px;
+    
+}
+.twitter  {
     border-radius: 10px;
+
+    
 }
 
-.facebook {
+.facebook  {
     background: #3B5998;
     border-radius: 10px;
+
     
   
 }
 
-.play-now {
+ .play-now { 
     background: rgb(248, 73, 53);
     border-radius: 10px;
     padding-right: 70px;
     position: relative;
+    color: white;
 }
 
 svg {
