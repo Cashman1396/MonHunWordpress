@@ -11,7 +11,7 @@ a {
 
 .home {
     border-radius: 10px;
-    padding: 14px;
+    padding: 17px;
 
 }
 
@@ -22,6 +22,7 @@ body {
 
 a, a:hover, button, button:hover {
     transition: all 0.2s;
+    
   }
 
   a:hover {
@@ -41,6 +42,18 @@ a, a:hover, button, button:hover {
     text-align: center;
     padding-right: 40px;
     
+}
+
+.nav-home {
+    margin-right: 20px;
+}
+
+.nav-tweet {
+    margin-right: 20px;
+}
+
+.nav-face {
+    margin-right: 20px;
 }
 
 /* Hero CSS */
